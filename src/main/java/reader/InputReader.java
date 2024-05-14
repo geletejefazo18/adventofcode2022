@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 public class InputReader {
 
     public static List<String> getInput() throws IOException {
-        try(InputStream is = InputReader.class.getResourceAsStream("/input1.txt")) {
+        try(InputStream is = InputReader.class.getResourceAsStream("/input2.txt")) {
             return new BufferedReader(new InputStreamReader(is,
                     StandardCharsets.UTF_8)).lines().collect(Collectors.toList());
         }
